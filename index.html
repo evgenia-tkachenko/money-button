@@ -1,15 +1,15 @@
 <html>
     <head>
         <title>Give me money</title>
-        <script src="script/js"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="wrapper">
-            <button id="moneyBtn">GIVE ME MONEY</button>
+            <button id="moneyBtn" onclick="raiseSalary()">GIVE ME MONEY</button>
             <div class="salaryBlock">
-                <div class="salaryLabel">Your salary: </div>
-                <div class="salaryValue"></div>
+                <div class="salaryLabel">Your salary $</div>
+                <div class="salaryValue" id="mySalaryValue"></div>
             </div>
         </div>
     </body>
