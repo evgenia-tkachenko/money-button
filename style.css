@@ -5,5 +5,39 @@
 
 #moneyBtn {
     margin: 20px auto;
-    padding: 10px;
+	background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color: #44c767;
+	border-radius: 28px;
+	border: 1px solid #18ab29;
+	display: block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Verdana;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+}
+#moneyBtn:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+#moneyBtn:active {
+	position:relative;
+	top:1px;
+}
+
+.salaryBlock {
+    text-align: center;
+}
+
+.salaryLabel {
+    display: inline-block;
+}
+
+.salaryValue {
+    display: inline-block;
+}
+
+.millionaireStatus {
+    padding: 20px 0;
 }
