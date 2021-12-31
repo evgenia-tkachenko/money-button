@@ -22,6 +22,7 @@ function becomeMillionaire() {
     millionaire = true;
     var millionaireDiv = document.getElementById("myMillionaireStatus");
     millionaireDiv.textContent = "You are a millionaire!!!"
+    document.getElementById("wrapper").classList.add("money");
     var snd = new Audio("sounds/winner.wav");
     snd.play();
 }
@@ -29,6 +30,10 @@ function becomeMillionaire() {
 function loseEverything() {
     var millionaireDiv = document.getElementById("myMillionaireStatus");
     millionaireDiv.textContent = "Oh shit! You lost everything 'cause you're one greedy bastard!";
+
+    var wrapper =  document.getElementById("wrapper")
+   wrapper.classList.remove("money", "green");
+   wrapper.classList.add("red");
 
     var moneyBtn = document.getElementById("moneyBtn");
     moneyBtn.remove();
