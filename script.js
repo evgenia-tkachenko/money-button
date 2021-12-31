@@ -1,5 +1,4 @@
 var millionaire;
-var bancrupt;
 
 function raiseSalary() {
     var salaryDiv = document.getElementById("mySalaryValue");
@@ -7,11 +6,11 @@ function raiseSalary() {
     var newSalary = currentSalary + Math.floor(Math.random() * 2000) + 50;
     salaryDiv.textContent = newSalary;
 
-    if (newSalary > 10000 && !millionaire && !bancrupt) {
+    if (newSalary > 10000 && !millionaire) {
         becomeMillionaire();
     }
 
-    if (newSalary > 20000 && millionaire && !bancrupt) {
+    if (newSalary > 20000 && millionaire) {
         loseEverything()
     }
 }
@@ -40,7 +39,6 @@ function setSalary() {
     var myDiv = document.getElementById("mySalaryValue");
     myDiv.textContent = Math.floor(Math.random() * 5000) + 200;
     millionaire = false;
-    bancrupt = false;
 }
 
 window.onload = setSalary;
